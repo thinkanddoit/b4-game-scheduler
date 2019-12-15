@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>b4 Soccer game schedule alarm service</title>
+  <link rel="stylesheet" href="css/web.css?v=6">
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- <link rel="stylesheet" media="(max-width:830px)" href="css/mobile.css"> -->
+
+
+  <!-- css 동적으로 적용 -->
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="item">
+      <h1>B4 Soccer game schedule alarm service</h1>
+    </div>
+
+    <div class="item">
+      <div class="prshead">Player Registration Section</div>
+      <div class="prsnothead">
+        Player Name<br>
+        <input type="text" id="player_name"><br>
+        Player Position<br>
+        <input type="text" id = "player_position">
+        <input type="button" value="regist" onclick="add_player()">
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="prshead">
+        Player Color Change Section
+      </div>
+      <div class="prsnothead">
+        Player-color
+        <input type="color" id="makingcolor1" value="#ffff00">
+        Text-color
+        <input type="color" id="makingcolor2" value="#000000">
+        <input type="button" onclick="makecolor()" value="change">
+      </div>
+
+    </div>
+
+    <div class="item">
+      <div class="prshead">
+        Formation & Match information
+      </div>
+      <div class="prsnothead" id="dd">
+        Formation
+        <select name="position" id="aa">
+          <option value="4-3-3" selected="selected">4-3-3</option>
+          <option value="4-4-2">4-4-2</option>
+          <option value="4-4-2">4-4-2</option>
+          <option value="4-4-1-1">4-4-1-1</option>
+          <option value="5-3-2">5-3-2</option>
+          <option value="3-4-3">3-4-3</option>
+          <option value="3-5-2">3-5-2</option>
+          <option value="4-2-3-1">4-2-3-1</option>
+          <option value="FREE">FREE</option>
+        </select><br><br>
+        Opposing team
+        <input type="text" id="bb"><br><br>
+        Match time
+        <input type="datetime-local" id="cc">
+        <input type="button" value="fix" onclick="fix()">
+      </div>
+
+    </div>
+
+    <div class="item">
+      <div class="prshead">
+        Player List
+      </div>
+      <div class="prsnothead" id="mytable">
+        <table>
+          <tr>
+            <th>Number</th>
+            <th>Position</th>
+            <th>Name</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>후보1</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>후보2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>후보3</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>후보4</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="prshead">
+        Play Board
+      </div>
+      <div id="playground" class="prsnothead"></div>
+    </div>
+
+    <div class="item">
+      seven
+    </div>
+
+  </div>
+</body>
+<script src="myscripts.js?v=5"></script>
+</html>
